@@ -3,6 +3,7 @@ package com.APIRestAssured.artiifact;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;
@@ -10,7 +11,7 @@ import static org.testng.Assert.assertEquals;
 
 public class GetUserAPIBeforeMethods {
 
-    @BeforeClass
+    @BeforeMethod
     public void setUp() {
         // Set up common configuration for all tests
         RestAssured.baseURI = "https://reqres.in/api";
