@@ -4,11 +4,12 @@ import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;
-import static org.testng.Assert.assertEquals;
+//import static org.testng.Assert.assertEquals;
 
 public class Log4jandCommonMethodforPost {
 
@@ -32,7 +33,7 @@ public class Log4jandCommonMethodforPost {
         logger.info("API Response:\n" + response.asString());
 
         // Assertions
-        assertEquals(response.getStatusCode(), 404, "Unexpected status code"); // Expecting a 404 Not Found
+        Assert.assertEquals(response.getStatusCode(), 404, "Unexpected status code"); // Expecting a 404 Not Found
         // You can add more assertions based on the response structure and your requirements
     }
 
@@ -44,7 +45,7 @@ public class Log4jandCommonMethodforPost {
         logger.info("Status code: " + response.getStatusCode());
         // Add assertions as per your requirements
         // For example, to assert that the status code is in the 4xx series
-        org.testng.Assert.assertTrue(response.getStatusCode() >= 400 && response.getStatusCode() < 500);
+        Assert.assertTrue(response.getStatusCode() >= 400 && response.getStatusCode() < 500);
     }
 
     @Test
