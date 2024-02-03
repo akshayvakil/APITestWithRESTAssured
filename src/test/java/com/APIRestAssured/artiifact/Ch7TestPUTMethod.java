@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 import static io.restassured.RestAssured.given;
 import static org.testng.Assert.assertEquals;
 
-public class TestPUTMethod {
+public class Ch7TestPUTMethod {
 
     @BeforeClass
     public void setUp() {

@@ -11,10 +11,10 @@ import org.testng.annotations.Test;
 import static io.restassured.RestAssured.given;
 //import static org.testng.Assert.assertEquals;
 
-public class Log4jandCommonMethodforPost {
+public class Ch4Log4jandCommonMethodforPost {
 
     // Initialize Log4j logger
-    private static final Logger logger = LogManager.getLogger(Log4jandCommonMethodforPost.class);
+    private static final Logger logger = LogManager.getLogger(Ch4Log4jandCommonMethodforPost.class);
     
   //  Logger logger= LogManager.getLogger();
     

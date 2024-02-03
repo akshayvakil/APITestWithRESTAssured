@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 import static io.restassured.RestAssured.given;
 import static org.testng.Assert.assertEquals;
 
-public class TestPOSTWithDataSets {
+public class Ch8TestPOSTWithDataSets {
 	@BeforeClass
 	public void setUp() {
 		RestAssured.baseURI = "https://reqres.in/api";
@@ -29,7 +29,7 @@ public class TestPOSTWithDataSets {
 		System.out.println("Response body: " + responseBody);
 // Add assertions as per your requirements
 // For example, to assert the response body contains the expected values
-		assertEquals(response.jsonPath().getString("id"), "4", "Incorrectid value");
+		assertEquals(response.jsonPath().getString  ("id"), "4", "Incorrectid value");
 		assertEquals(response.jsonPath().getString("token"), "QpwL5tke4Pnpja7X4", "Incorrect token value");
 	}
 

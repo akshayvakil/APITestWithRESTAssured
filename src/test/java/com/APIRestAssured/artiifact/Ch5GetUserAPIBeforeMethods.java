@@ -1,7 +1,10 @@
 package com.APIRestAssured.artiifact;
 
 import io.restassured.RestAssured;
+import io.restassured.http.ContentType;
 import io.restassured.response.Response;
+import io.restassured.specification.RequestSpecification;
+
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -9,7 +12,7 @@ import org.testng.annotations.Test;
 import static io.restassured.RestAssured.given;
 import static org.testng.Assert.assertEquals;
 
-public class GetUserAPIBeforeMethods {
+public class Ch5GetUserAPIBeforeMethods {
 
     @BeforeMethod
     public void setUp() {
@@ -65,4 +68,6 @@ public class GetUserAPIBeforeMethods {
         // For example, to assert that the status code is 404
         org.testng.Assert.assertEquals(statusCode, 404);
     }
+    
+    
 }

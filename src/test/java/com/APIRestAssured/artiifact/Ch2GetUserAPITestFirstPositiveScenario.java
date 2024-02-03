@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.*;
 
-public class GetUserAPITestFirstPositiveScenario {
+public class Ch2GetUserAPITestFirstPositiveScenario {
 	@Test
     public void testGetUsers() {
         // Set the base URI

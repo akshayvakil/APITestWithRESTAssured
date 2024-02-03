@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 import static io.restassured.RestAssured.given;
 import static org.testng.Assert.assertEquals;
 
-public class GetUserAPINegativeScenario {
+public class Ch3GetUserAPINegativeScenario {
 
 	@Test
 	public void testNegativeScenario() {
