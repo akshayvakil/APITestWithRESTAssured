@@ -15,10 +15,10 @@ import static io.restassured.RestAssured.given;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
-public class Ch6TestPOSTMethod {
+public class Ch6TestPOSTMethodWithRequestSpecificationInterface {
 
     // Initialize Log4j logger
-    private static final Logger logger = LogManager.getLogger(Ch6TestPOSTMethod.class);
+    private static final Logger logger = LogManager.getLogger(Ch6TestPOSTMethodWithRequestSpecificationInterface.class);
 
     @BeforeClass
     public void setUp() {

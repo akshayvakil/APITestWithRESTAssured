@@ -29,7 +29,7 @@ public class Ch8TestPOSTWithDataSets {
 		System.out.println("Response body: " + responseBody);
 // Add assertions as per your requirements
 // For example, to assert the response body contains the expected values
-		assertEquals(response.jsonPath().getString  ("id"), "4", "Incorrectid value");
+		assertEquals(response.jsonPath().getString("id"), "4", "Incorrectid value");
 		assertEquals(response.jsonPath().getString("token"), "QpwL5tke4Pnpja7X4", "Incorrect token value");
 	}
 

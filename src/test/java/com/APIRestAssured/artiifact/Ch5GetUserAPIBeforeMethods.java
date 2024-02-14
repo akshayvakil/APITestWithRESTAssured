@@ -63,6 +63,7 @@ public class Ch5GetUserAPIBeforeMethods {
         Response response = RestAssured.given().when().get("/users/1000");
         // Get response status code
         int statusCode = response.getStatusCode();
+        
         System.out.println("Status code: " + statusCode);
         // Add assertions as per your requirements
         // For example, to assert that the status code is 404
